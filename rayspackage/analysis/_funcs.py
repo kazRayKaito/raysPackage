@@ -1,7 +1,13 @@
 import statistics
 
 def getStdevS(list):
-    return statistics.stdev(list)
+    data = []
+    for item in list:
+        data.append(float(item))
+    return statistics.stdev(data)
 
 def getStdevP(list):
-    return statistics.pstdev(list)
+    data = []
+    for item in list:
+        data.append(float(item))
+    return statistics.pstdev(data)
